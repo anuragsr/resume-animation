@@ -1,0 +1,23 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	/*background: rgba(128, 128, 128, 0.2);*/
+}
+
+.main{
+	height: 100%;
+	width: 100%;
+}
+
+.top, .bottom{
+	height: 50%;
+	width: 100%;
+	position: relative;
+}
+
+.bottom{
+	/*top:50%;*/
+}

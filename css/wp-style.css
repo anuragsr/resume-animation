@@ -1,0 +1,415 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: top; }
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
+    background: #00CF00;
+    border: 1px solid #00CF00;
+    cursor: pointer;
+    font-family: 'Agency FB';
+    font-weight:bold; }
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    }
+.input-group {
+    width: 100%;
+    margin-bottom: 10px; }
+.input-group input {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #f7f7fa;
+    border: solid 1px #cdd4e3;
+    color: #96A1B0;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: none;
+    background: white;
+    border: solid 1px #268d26;
+    border-radius: 10px; }
+.input-group textarea {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #f7f7fa;
+    border: solid 1px #cdd4e3;
+    color: #96A1B0;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: none;
+    background: white;
+    border: solid 1px #268d26;
+    border-radius: 10px; }
+.container{
+	max-width: 980px;
+    width: 100%;
+    padding: 0px 30px;
+    margin: 0px auto;
+}
+*{
+		box-sizing: border-box;
+}
+section .container > .heading h1{
+	font-size: 80px;
+    display: inline;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Agency FB';
+}
+section .container > .heading h1:before{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 1200px;
+    background: #268d26;
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+section .container > .heading h1:after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 1200px;
+    background: #00cf00;
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    bottom: -4px;
+    right: 0px;
+}
+section .contents{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.contact-us .contents {
+    max-width: 850px; }
+.contact-us .contents .description {
+    margin-bottom: 40px; }
+.contact-us .contents .description p {
+    font-size: 18px;
+    line-height: 22px; }
+.contact-us .contents .form {
+    display: flex;
+    flex-wrap: wrap; }
+.contact-us .contents .form .input-group {
+    margin-bottom: 20px; }
+.contact-us .contents .form .left {
+    width: calc(50% - 20px);
+    margin-right: 40px; }
+@media screen and (max-width: 767px) {
+    .contact-us .contents .form .left {
+        width: 100%; } }
+.contact-us .contents .form .right {
+    width: calc(50% - 20px); }
+.contact-us .contents .form .right .input-group {
+    height: 100%; }
+.contact-us .contents .form .right .input-group .input {
+    height: 100%; }
+.contact-us .contents .form .right .input-group .input textarea {
+    height: 100%; }
+@media screen and (max-width: 767px) {
+    .contact-us .contents .form .right {
+        width: 100%; } }
+.contact-us .contents .form .submit button {
+    font-size: 26px;
+    padding: 5px 20px;
+    min-width: 150px; }
+@media screen and (max-width: 767px) {
+    .contact-us .contents .form {
+        flex-direction: column; } }
+
+footer {
+    background: url("../images/fb.png");
+    padding-top: 90px; }
+footer .container {
+    display: flex;
+    flex-direction: column; }
+footer .top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+footer .top .box {
+    width: calc(33.33% - 40px);
+    margin-right: 60px; }
+footer .top .box h2 {
+    font-family: 'Agency FB';
+    font-size: 34px;
+    color: #268d26;
+    padding-bottom: 30px; }
+@media screen and (max-width: 979px) {
+    footer .top .box h2 {
+        padding-bottom: 10px; } }
+footer .top .box p {
+    padding-bottom: 20px;
+    line-height: 22px; }
+footer .top .box .submit {
+    padding-bottom: 20px; }
+footer .top .box .social {
+    display: flex;
+    justify-content: flex-end; }
+footer .top .box .social .icons {
+    width: 260px; }
+footer .top .box:last-of-type {
+    margin-right: 0px; }
+footer .top .box ul li {
+    list-style-type: none; }
+@media screen and (max-width: 979px) {
+    footer .top .box ul li {
+        margin-right: 10px; } }
+@media screen and (max-width: 979px) {
+    footer .top .box ul {
+        display: flex;
+        flex-wrap: wrap; } }
+@media screen and (max-width: 979px) {
+    footer .top .box .image {
+        width: 270px;
+        margin: 0 auto; } }
+@media screen and (max-width: 979px) {
+    footer .top .box {
+        width: 100%;
+        margin: 0px 0px 40px 0px; } }
+footer .bottom {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px; }
+footer .bottom ul {
+    display: flex;
+    font-family: 'Agency FB';
+    color: #268d26;
+    justify-content: center; }
+footer .bottom ul li {
+    margin-right: 30px;
+    line-height: 32px; 
+    font-weight: bold;
+}
+footer .bottom ul li:first-of-type {
+    list-style-type: none; }
+@media screen and (max-width: 979px) {
+    footer .bottom ul li {
+        list-style-type: none; } }
+@media screen and (max-width: 979px) {
+    footer .bottom ul {
+        display: block; } }
+footer .bottom .copyright {
+    font-family: 'Agency FB';
+    color: #268d26;
+    line-height: 32px; }
+@media screen and (max-width: 979px) {
+    footer .bottom {
+        width: 100%;
+        padding-top: 0px; } }
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+				        form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form p{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+@media screen and (max-width:767px){
+    form p{
+        width: 100%;
+    }
+
+}
+form p label span input {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #f7f7fa;
+    border: solid 1px #cdd4e3;
+    color: #96A1B0;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: none;
+    background: white;
+    border: solid 1px #268d26;
+    border-radius: 10px; }
+form p label span textarea {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #f7f7fa;
+    border: solid 1px #cdd4e3;
+    color: #96A1B0;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: none;
+    background: white;
+    border: solid 1px #268d26;
+    border-radius: 10px; }
+
+form p input[type="submit"]{
+    color: #fff;
+    border-radius: 10px;
+    background: #00CF00;
+    border: 1px solid #00CF00;
+    cursor: pointer;
+    font-family: 'Agency FB';
+    font-size: 26px;
+    padding: 5px 20px;
+    min-width: 150px;
+}
+form p:last-of-type {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+form p .ajax-loader{
+    position: absolute;
+    opacity: 0;
+}
+.copyright{
+	font-weight: bold;
+}
+a {
+    color: #268d26;
+    text-decoration: none;
+    font-weight: bold; }
+
+/* Added Styles*/
+
+footer, section.contact-us{
+    position: relative; 
+    background-position: 50% 40%;    
+}
+
+/*.contact-us .container{
+
+}*/
+.contact-us  .container, footer .container{
+    z-index: 1;
+    position: relative;
+}
+
+.can-bottom, .can-top{
+    /*overflow-x: hidden;*/
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /*background: black;*/
+    z-index: 0;
+}
+.can-bottom{
+    bottom:0;
+    height: 120%;
+    /*top:-205px;*/
+}
+ .can-top{
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    background: url(../images/fb.png);    
+    background-position: 50% 40%;
+ }

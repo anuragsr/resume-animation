@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resume Animation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/wp-style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <section class="contact-us" style="padding-top: 40px;">
+        <div class="can-top"></div>
+        <div class="container">
+          <div class="heading">
+            <h1>Contact us</h1>
+          </div>
+          <div class="contents">
+            <div class="description">
+              <p>Get in touch by uploading your resume here!</p>
+            </div>
+            <div role="form" class="wpcf7" id="wpcf7-f4-p12-o1" lang="en-US" dir="ltr">
+              <div class="screen-reader-response"></div>
+              <form action="/infographic/#wpcf7-f4-p12-o1" method="post" class="wpcf7-form" enctype="multipart/form-data" novalidate="novalidate">
+                <p>
+                  <label>
+                    <span class="wpcf7-form-control-wrap your-name">
+                      <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name">
+                    </span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <span class="wpcf7-form-control-wrap your-email">
+                      <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email">
+                    </span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <span class="wpcf7-form-control-wrap file-644">
+                      <input type="file" name="file-644" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-required="true" aria-invalid="false">
+                    </span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <span class="wpcf7-form-control-wrap your-message">
+                      <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your Message"></textarea>
+                    </span>
+                  </label>
+                </p>
+                <p>
+                  <input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit">
+                  <span class="ajax-loader"></span>
+                </p>
+                <div class="wpcf7-response-output wpcf7-display-none"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="can-bottom"></div>
+        <div class="container">
+          <div class="top">
+            <div class="box">
+              <h2>WIN A FREE RÉSUMÉ: </h2>
+              <p>We give one free infographic resume away for every 1,000 people who sign up for our email list. To date, we've given away 24 free résumés</p>
+              <div class="input-group">
+                <div class="input">
+                  <input type="text" placeholder="email">
+                </div>
+              </div>
+              <div class="submit">
+                <button>Enter to win</button>
+              </div>
+            </div>
+            <div class="box">
+              <h2>WE GIVE BACK:</h2>
+              <p>We are proud to partner with Defy Ventures in supporting efforts to provide a legal career path to formerly incarcerated persons. For every 25 résuméswe design, we design one personal brand or résumé for a Defy graduate. Learn more at <a href="DefyVentures.org">DefyVentures.org</a>
+              </p>
+            </div>
+            <div class="box">
+              <h2>Navigate</h2>
+              <ul>
+                <li>
+                  <a href="#">Top</a>
+                </li>
+                <li>
+                  <a href="#">Why</a>
+                </li>
+                <li>
+                  <a href="#">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#">Press</a>
+                </li>
+                <li>
+                  <a href="#">Stats </a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Examples</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottom">
+            <ul>
+              <li>INFOGRAPHIC INC.</li>
+              <li>848 N RAINBOW BLVD SUITE 1800 LAS VEGAS, NV 89107 </li>
+              <li>1 (800) 953-5932 </li>
+              <li>HELLO@INFOGRAPHICRESUMES.COM</li>
+            </ul>
+            <div class="copyright">
+              <span>© 2018 INFOGRAPHIC INC. ALL RIGHTS RESERVED. </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pixi.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script>
+      var app;
+
+      function getRandom(min, max) {
+        return Math.random() * (max - min + 1) + min;
+      }
+
+      function getDistance(x1, y1, x2, y2) {
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+      }
+
+      function getClosest(x, y, n, arr, layer) {
+        var ret = [];
+        arr.filter(function(obj) {
+          return !obj.marked && obj._aLayer == layer;
+        }).filter(function(obj) {
+          obj.dist = getDistance(x, y, obj.x, obj.y);
+          return obj;
+        }).sort(function(a, b) {
+          return a.dist - b.dist;
+        }).forEach(function(x, i) {
+          if (i < n && x.dist < 100) {
+            x.marked = true;
+            ret.push(x);
+          }
+        })
+        return ret;
+      }
+      $(function() {
+        // App Init
+        var width = $(".can-bottom").width();
+        var height = $(".can-bottom").outerHeight() + $(".bottom").outerHeight();
+        app = new PIXI.Application(width, height, {
+          transparent: true,
+          // antialias: true
+        });
+        app.view.style.opacity = 1;
+        app.view.style.position = 'absolute';
+        app.view.style.bottom = 0;
+        $(".can-bottom").append(app.view);
+        // Other variables
+        var ratio = 8.5 / 11;
+        var imgWidth = 96;
+        var resArr = [];
+        var imgArr = [];
+        var animArr = [];
+        var noLayers = 3;
+        var currLayer = 1;
+        var resumesPerLayer = 300;
+        var noAnimate = 15;
+        var animDist = 75;
+        var rand;
+        // Getting Resumes			    
+        // $.getJSON( "data/test.json", function( data ) {
+        $.getJSON("data/newres-light.json", function(data) {
+          resArr = data;
+          var container = new PIXI.Container(100);
+          app.stage.addChild(container);
+          // Base Layer
+          resArr.forEach(function(obj, key) {
+            for (var i = 0; i < 25; i++) {
+              var image2 = new PIXI.Sprite(new PIXI.Texture.fromImage(obj));
+              image2.width = imgWidth;
+              image2.height = imgWidth / ratio;
+              image2.anchor.set(0.5);
+              image2.x = 50 + getRandom(0, app.view.width - 50);
+              image2.y = 150 + getRandom(0, app.view.height - 150);
+              image2.rotation = getRandom(-Math.PI / 4, Math.PI / 4);
+              // container.addChild(image2);
+              app.stage.addChild(image2);
+            }
+          })
+          // Creating array of Pixi Sprites from the data
+          for (var i = 0; i < noLayers; i++) {
+            for (var j = 0; j < resumesPerLayer; j++) {
+              var image = new PIXI.Sprite(new PIXI.Texture.fromImage(resArr[j % resArr.length]));
+              image.width = imgWidth;
+              image.height = imgWidth / ratio;
+              image.anchor.set(0.5);
+              image.x = 50 + getRandom(0, app.view.width - 50);
+              image.y = 150 + getRandom(0, app.view.height - 150);
+              image.rotation = getRandom(-Math.PI / 4, Math.PI / 4);
+              image.origX = JSON.parse(JSON.stringify(image.x));
+              image.origY = JSON.parse(JSON.stringify(image.y));
+              image.origR = JSON.parse(JSON.stringify(image.rotation));
+              image.marked = false;
+              image._aLayer = i + 1;
+              imgArr.push(image);
+              app.stage.addChild(image);
+            }
+          }
+        });
+        $("footer, .can-bottom, .can-bottom canvas").on("mousemove", function(e) {
+          // console.log("moving in layer : " + currLayer)
+          var x = e.pageX - $('.can-bottom canvas').offset().left;
+          var y = e.pageY - $('.can-bottom canvas').offset().top;
+          animArr = getClosest(x, y, noAnimate, imgArr, currLayer);
+          // console.log(animArr);
+          TweenMax.staggerTo(animArr, .5, {
+            cycle: {
+              ease: [Power1.easeOut, Power1.easeOut, Power1.easeOut],
+              x: function(key, target) {
+                if (target.x <= x) {
+                  rand = getRandom(-1 * animDist, 0);
+                } else if (target.x >= x) {
+                  rand = getRandom(0, 1 * animDist);
+                }
+                if (rand > 0) {
+                  return Math.min(app.view.width, target.x + rand);
+                } else {
+                  return Math.max(50, target.x + rand);
+                }
+              },
+              y: function(key, target) {
+                if (target.y <= y) {
+                  rand = getRandom(-1 * animDist, 0);
+                } else if (target.y >= y) {
+                  rand = getRandom(0, 1 * animDist);
+                }
+                if (rand > 0) {
+                  return Math.min(app.view.height, target.y + rand);
+                } else {
+                  return Math.max(200, target.y + rand);
+                }
+              },
+              rotation: function(key, target) {
+                return target.rotation + getRandom(-0.02, 0.02);
+              },
+              onComplete: function(key, target) {
+                // target.marked = false;
+                var x = target.origX;
+                var y = target.origY;
+                var r = target.origR;
+                var tl = new TimelineMax();
+                tl.to(target, 2.1, {
+                  delay: .7,
+                  alpha: 0,
+                  ease: Power1.easeOut
+                }).to(target, .4, {
+                  // delay:.2,
+                  alpha: 1,
+                  x: x,
+                  y: y,
+                  rotation: r,
+                  ease: Power1.easeOut
+                })
+              }
+            }
+          }, 0, function() {
+            imgArr.filter(function(obj) {
+              obj.marked = false;
+              return obj;
+            })
+            if (currLayer == noLayers) currLayer = 1;
+            else currLayer++;
+          })
+        })
+      })
+    </script>
+  </body>
+</html>
